@@ -45,7 +45,7 @@ function App() {
             <Alert alert={alert}/>
             <Routes>
               <Route 
-                exact path='/' 
+                exact path='/TextApp' 
                 element=
                 {       
                   <div className="container">        
