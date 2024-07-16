@@ -3,35 +3,35 @@ import React, {useState} from 'react'
 export default function TextUtil(props) {
     const [text, setText] = useState("")
 
-    const [myStyle, setMyStyle] = useState({
-        color: 'black',
-        backgroundColor: 'white',
-    })
+    // const [myStyle, setMyStyle] = useState({
+    //     color: 'black',
+    //     backgroundColor: 'white',
+    // })
 
-    const[btnText, setBtnText] = useState("Turn to Dark Mode")
-    const[btnColor, setBtnColor] = useState("btn-light")
-    const toggleStyle = ()=> {
-        if(myStyle.color === 'black')
-        {
-            setMyStyle({
-                color: 'white',
-                backgroundColor: 'black',
-                border: '1px solid white'
-            })
-            setBtnText("Turn to Light Mode")
-            setBtnColor("btn-dark")
-        }
+    // const[btnText, setBtnText] = useState("Turn to Dark Mode")
+    // const[btnColor, setBtnColor] = useState("btn-light")
+    // const toggleStyle = ()=> {
+    //     if(myStyle.color === 'black')
+    //     {
+    //         setMyStyle({
+    //             color: 'white',
+    //             backgroundColor: 'black',
+    //             border: '1px solid white'
+    //         })
+    //         setBtnText("Turn to Light Mode")
+    //         setBtnColor("btn-dark")
+    //     }
 
-        else{
-            setMyStyle({
-                color: 'black',
-                backgroundColor: 'white'               
-            })
-            setBtnText("Turn to Dark Mode")
-            setBtnColor("btn-light")
+    //     else{
+    //         setMyStyle({
+    //             color: 'black',
+    //             backgroundColor: 'white'               
+    //         })
+    //         setBtnText("Turn to Dark Mode")
+    //         setBtnColor("btn-light")
 
-        }
-    }
+    //     }
+    // }
 
     const handleUpCase = () =>{
         let newText = text.toUpperCase()
@@ -73,7 +73,7 @@ export default function TextUtil(props) {
                 <button className="btn btn-primary mx-2 my-2" onClick={handleUpCase}> Convert to Upper Case</button>
                 <button className="btn btn-primary mx-2 my-2" onClick={handleLowCase}> Convert to Lower Case</button>
                 <button className="btn btn-primary mx-2 my-2" onClick={handleSpaceCase}> Remove Extra Spaces</button>
-                <button type='button' className= {`btn ${btnColor} mx-2 my-2`} onClick={toggleStyle}> {btnText} </button>
+                {/*<button type='button' className= {`btn ${btnColor} mx-2 my-2`} onClick={toggleStyle}> {btnText} </button>*/}
             </div>
         </div>
 
